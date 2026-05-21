@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Legado del Sombrero - Una novela de Raymond Rosa Ávila sobre misterio emocional, fe y el verdadero significado del legado familiar.">
+    <meta name="author" content="Raymond Rosa Ávila">
+    <meta name="keywords" content="libro, novela, legado, sombrero, Raymond Rosa Ávila, misterio emocional, crecimiento espiritual">
     <title>El Legado del Sombrero | Raymond Rosa Ávila</title>
     <!-- Tailwind CSS para diseño moderno y rápido -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,9 +21,14 @@
         .bg-gold-gradient { background: var(--gold-gradient); }
         .text-gold { color: #d4af37; }
         .bg-deep-earth { background-color: var(--deep-earth); }
+        .border-gold-gradient { border-image: var(--gold-gradient); border-image-slice: 1; }
 
         .hero-overlay {
             background: linear-gradient(to bottom, rgba(12, 10, 9, 0.4), rgba(12, 10, 9, 1));
+        }
+        
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -40,9 +48,9 @@
 
     <!-- SECCIÓN HERO / INICIO -->
     <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <!-- IMAGEN DE FONDO: Aquí puedes poner la imagen del cuarto o la hacienda -->
+        <!-- IMAGEN DE FONDO: Reemplaza con tu imagen -->
         <img src="https://images.unsplash.com/photo-1507652313519-77ed56669721?auto=format&fit=crop&q=80&w=2000" 
-             alt="Fondo Nostálgico" class="absolute w-full h-full object-cover opacity-50">
+             alt="Fondo Nostálgico - Paisaje evocador" class="absolute w-full h-full object-cover opacity-50">
         <div class="absolute inset-0 hero-overlay"></div>
 
         <div class="relative z-10 text-center px-6 max-w-4xl">
@@ -63,8 +71,8 @@
             <div class="relative">
                 <!-- SUSTITUIR AQUÍ: Pon el link a la portada de tu libro -->
                 <img src="https://via.placeholder.com/400x600?text=Portada+El+Legado+del+Sombrero" 
-                     alt="Portada del Libro" class="rounded-lg shadow-2xl border border-white/10 relative z-10">
-                <div class="absolute -top-4 -left-4 w-full h-full border-2 border-gold-gradient rounded-lg z-0"></div>
+                     alt="Portada del Libro El Legado del Sombrero" class="rounded-lg shadow-2xl border border-white/10 relative z-10">
+                <div class="absolute -top-4 -left-4 w-full h-full border-2 rounded-lg z-0" style="border-color: #d4af37;"></div>
             </div>
             <div>
                 <h2 class="serif text-4xl mb-6 text-gold">La Historia</h2>
@@ -72,7 +80,7 @@
                     Tras la muerte de su padre, Marceronte hereda objetos aparentemente inconexos: un sombrero, un automóvil antiguo, un reloj y pistas financieras. Lo que comienza como una búsqueda de riqueza material, se transforma en un viaje interno hacia el alma.
                 </p>
                 <p class="text-stone-400 italic mb-8">
-                    El verdadero legado no era lo que podía poseer... sino en quién debía convertirse.
+                    "El verdadero legado no era lo que podía poseer... sino en quién debía convertirse."
                 </p>
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3 text-stone-300">
@@ -95,39 +103,72 @@
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="w-64 h-64 shrink-0">
                 <!-- SUSTITUIR AQUÍ: Pon el link a tu foto profesional -->
-                <img src="https://via.placeholder.com/300" alt="Raymond Rosa Ávila" class="w-full h-full</div>
-!! ---------//
-                        <!-- SECCIÓN NOVELET / REFLEXIONES -->
-    <section id="reflexiones" class="py-24 px-6 bg-deep-earth text-white">
+                <img src="https://via.placeholder.com/300" alt="Raymond Rosa Ávila - Autor del libro" class="w-full h-full object-cover rounded-full shadow-2xl border-4" style="border-color: #d4af37;">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="serif text-4xl mb-4 text-gold">Raymond Rosa Ávila</h2>
+                <p class="text-stone-300 text-lg leading-relaxed max-w-2xl">
+                    Escritor dominicano apasionado por las historias que conectan el alma con los valores eternos. 
+                    <span class="italic text-gold">El Legado del Sombrero</span> es su obra debut, una novela que invita 
+                    a reflexionar sobre la herencia más profunda que un padre puede dejar: una vida transformada.
+                </p>
+                <div class="mt-6 flex gap-4 justify-center md:justify-start">
+                    <a href="#" class="text-stone-400 hover:text-gold transition">Instagram</a>
+                    <a href="#" class="text-stone-400 hover:text-gold transition">Twitter</a>
+                    <a href="#" class="text-stone-400 hover:text-gold transition">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN REFLEXIONES -->
+    <section id="reflexiones" class="py-24 px-6 bg-stone-950">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl mb-6">Reflexiones del Legado</h2>
+            <h2 class="serif text-4xl mb-6 text-gold">Reflexiones del Legado</h2>
             <p class="text-lg text-stone-300 mb-16 max-w-2xl mx-auto">
                 Más allá de la historia, cada capítulo deja una huella. Estas reflexiones nacen del alma de la obra.
             </p>
 
             <div class="grid md:grid-cols-3 gap-8">
-
                 <!-- Reflexión 1 -->
                 <div class="bg-white/5 p-8 rounded-xl backdrop-blur-md border border-white/10 hover:scale-105 transition">
-                    <p class="italic text-stone-200">
+                    <p class="italic text-stone-200 text-lg">
                         "No todo lo que se hereda se toca… algunas cosas se comprenden con el alma."
                     </p>
                 </div>
 
                 <!-- Reflexión 2 -->
                 <div class="bg-white/5 p-8 rounded-xl backdrop-blur-md border border-white/10 hover:scale-105 transition">
-                    <p class="italic text-stone-200">
+                    <p class="italic text-stone-200 text-lg">
                         "El verdadero tesoro no estaba en el cofre… sino en quien aprendía a abrirlo."
                     </p>
                 </div>
 
                 <!-- Reflexión 3 -->
                 <div class="bg-white/5 p-8 rounded-xl backdrop-blur-md border border-white/10 hover:scale-105 transition">
-                    <p class="italic text-stone-200">
+                    <p class="italic text-stone-200 text-lg">
                         "El legado no se mide en riquezas… sino en la transformación que dejamos en otros."
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- TESTIMONIOS - SECCIÓN ADICIONAL -->
+    <section class="py-20 px-6 bg-deep-earth">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-4xl mb-12 text-center text-gold">Lo que dicen los lectores</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10">
+                    <div class="flex text-gold mb-4">★★★★★</div>
+                    <p class="italic text-stone-200">"Una historia que te atrapa desde la primera página. Me hizo reflexionar sobre mi propia familia y el legado que quiero dejar."</p>
+                    <p class="mt-4 text-stone-400">— María González</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10">
+                    <div class="flex text-gold mb-4">★★★★★</div>
+                    <p class="italic text-stone-200">"Raymond escribe con el alma. Cada capítulo es una lección de vida disfrazada de novela de misterio."</p>
+                    <p class="mt-4 text-stone-400">— Carlos Méndez</p>
+                </div>
             </div>
         </div>
     </section>
@@ -146,13 +187,27 @@
         </div>
     </section>
 
+    <!-- NEWSLETTER - OPCIONAL -->
+    <section class="py-16 px-6 bg-black/50">
+        <div class="max-w-2xl mx-auto text-center">
+            <h3 class="text-2xl mb-4 text-gold serif">Recibe más reflexiones</h3>
+            <p class="text-stone-400 mb-6">Suscríbete para recibir contenido exclusivo del autor.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Tu correo electrónico" class="px-6 py-3 rounded-full bg-stone-800 border border-stone-700 text-white focus:outline-none focus:border-gold">
+                <button type="submit" class="bg-gold-gradient text-stone-900 px-6 py-3 rounded-full font-bold hover:scale-105 transition">Suscribirme</button>
+            </form>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="bg-black text-stone-400 py-10 text-center text-sm">
         <p class="mb-2">&copy; 2026 Raymond Rosa Ávila. Todos los derechos reservados.</p>
         <p class="italic">"El verdadero legado no se encuentra… se comprende."</p>
+        <div class="flex justify-center gap-6 mt-4">
+            <a href="#" class="hover:text-gold transition">Política de privacidad</a>
+            <a href="#" class="hover:text-gold transition">Contacto</a>
+        </div>
     </footer>
 
 </body>
-</html>
-
-                    
+</html>      
