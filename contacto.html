@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-<style>
-    .bg-gold-gradient {
-        background: linear-gradient(45deg, #d4af37, #f9e29c, #b8860b);
-        background-size: 200% 200%;
-        animation: gradient-move 5s ease infinite;
-    }
-
-    @keyframes gradient-move {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-</style>
-    
-    
+<head>
     <meta charset="UTF-8">
-    <title>Contacto - Raymond Rosa Ávila</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto para El Legado del Sombrero - Comunícate con Raymond Rosa Ávila">
+    <title>Contacto - El Legado del Sombrero | Raymond Rosa Ávila</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-stone-900 text-stone-300 p-10">
-    <div class="max-w-2xl mx-auto text-center">
-        <h1 class="text-3xl text-gold mb-6 serif">Contacto</h1>
-        <p class="mb-10">Si desea compartir sus reflexiones sobre la obra o realizar una consulta, estaré encantado de leerle.</p>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .bg-gold-gradient {
+            background: linear-gradient(45deg, #d4af37, #f9e29c, #b8860b);
+            background-size: 200% 200%;
+            animation: gradient-move 5s ease infinite;
+        }
 
-        <form action="https://formspree.io/f/mojbdbvb" method="POST" class="text-left space-y-4">
+        @keyframes gradient-move {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .text-gold { 
+            color: #d4af37; 
+        }
+        
+        .serif { 
+            font-family: 'Playfair Display', serif; 
+        }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+        }
+
+        .focus\:border-gold:focus {
+            border-color: #d4af37;
+        }
+    </style>
+</head>
+<body class="bg-stone-900 text-stone-300 p-6 md:p-10">
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-3xl md:text-4xl text-gold mb-4 serif text-center">Contacto</h1>
+        <p class="mb-10 text-center text-stone-400">
+            Si desea compartir sus reflexiones sobre la obra o realizar una consulta, estaré encantado de leerle.
+        </p>
+
+        <form action="https://formspree.io/f/mojbdbvb" method="POST" class="space-y-5 bg-stone-800/30 p-6 md:p-8 rounded-xl border border-stone-700">
             <div>
-                <label class="block mb-1">Nombre</label>
-                <input type="text" name="nombre" required class="w-full px-4 py-2 rounded bg-white/10 border border-white/20 text-white focus:border-gold outline-none">
+                <label class="block mb-2 text-stone-300 font-medium">Nombre</label>
+                <input type="text" name="nombre" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-gold transition">
             </div>
             <div>
-                <label class="block mb-1">Correo Electrónico</label>
-                <input type="email" name="email" required class="w-full px-4 py-2 rounded bg-white/10 border border-white/20 text-white focus:border-gold outline-none">
+                <label class="block mb-2 text-stone-300 font-medium">Correo Electrónico</label>
+                <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-gold transition">
             </div>
             <div>
-                <label class="block mb-1">Mensaje</label>
-                <textarea name="mensaje" rows="5" required class="w-full px-4 py-2 rounded bg-white/10 border border-white/20 text-white focus:border-gold outline-none"></textarea>
+                <label class="block mb-2 text-stone-300 font-medium">Mensaje</label>
+                <textarea name="mensaje" rows="5" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-gold transition"></textarea>
             </div>
-            <button type="submit" class="w-full bg-gold-gradient py-3 rounded-full text-stone-900 font-bold uppercase tracking-widest hover:scale-105 transition">Enviar Mensaje</button>
+            <button type="submit" class="w-full bg-gold-gradient py-3 rounded-full text-stone-900 font-bold uppercase tracking-widest hover:scale-105 transition duration-300">
+                Enviar Mensaje
+            </button>
         </form>
-        <a href="index.html" class="inline-block mt-10 text-gold hover:underline">← Volver al inicio</a>
+        
+        <div class="text-center mt-8">
+            <a href="index.html" class="text-gold hover:text-amber-500 transition underline">← Volver al inicio</a>
+        </div>
     </div>
 </body>
 </html>
