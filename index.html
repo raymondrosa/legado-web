@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>    
-    <style>
-    .bg-gold-gradient {
-        background: linear-gradient(45deg, #d4af37, #f9e29c, #b8860b);
-        background-size: 200% 200%;
-        animation: gradient-move 5s ease infinite;
-    }
-
-    @keyframes gradient-move {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-
-        <head>
-</style>
-    
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="El Legado del Sombrero - Una novela de Raymond Rosa Ávila sobre misterio emocional, fe y el verdadero significado del legado familiar.">
     <meta name="author" content="Raymond Rosa Ávila">
     <meta name="keywords" content="libro, novela, legado, sombrero, Raymond Rosa Ávila, misterio emocional, crecimiento espiritual">
     <title>El Legado del Sombrero | Raymond Rosa Ávila</title>
+    
     <!-- Tailwind CSS para diseño moderno y rápido -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-   <style> 
-       
+    <style> 
+        .bg-gold-gradient {
+            background: linear-gradient(45deg, #d4af37, #f9e29c, #b8860b);
+            background-size: 200% 200%;
+            animation: gradient-move 5s ease infinite;
+        }
+
+        @keyframes gradient-move {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         :root {
             --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f2d472 50%, #b8860b 100%);
             --deep-earth: #1c1917;
         }
+        
         body { font-family: 'Inter', sans-serif; background-color: #0c0a09; color: #e7e5e4; }
         .serif { font-family: 'Playfair Display', serif; }
         .bg-gold-gradient { background: var(--gold-gradient); }
@@ -45,7 +41,7 @@
             background: linear-gradient(to bottom, rgba(12, 10, 9, 0.4), rgba(12, 10, 9, 1));
         }
 
-        /* NUEVA CLASE PARA EL FONDO DEL ESTUDIO */
+        /* CLASE PARA EL FONDO DEL ESTUDIO */
         .bg-estudio {
             background-image: linear-gradient(rgba(28, 25, 23, 0.85), rgba(28, 25, 23, 0.85)), url('fondo-estudio.png');
             background-size: cover;
@@ -57,7 +53,7 @@
             scroll-behavior: smooth;
         }
     </style>
-    </head>
+</head>
 <body>
 
     <!-- NAVEGACIÓN -->
@@ -102,8 +98,8 @@
             <div>
                 <h2 class="serif text-4xl mb-6 text-gold">La Historia</h2>
                 <p class="text-stone-300 text-lg leading-relaxed mb-6">
-    Tras la muerte de su padre, Marceronte hereda una serie de objetos aparentemente inconexos: un sombrero, un automóvil antiguo, un reloj y algunas pistas financieras. Inicialmente, Marceronte no esperaba encontrar un legado material y ni siquiera conocía el valor de estos objetos. Sin embargo, a medida que avanza en la interpretación de las pistas, descubre que su verdadero propósito no era acumular riquezas, sino emprender un profundo viaje interno. Lo que comienza como una búsqueda confusa y desconcertante, se transforma en una revelación espiritual y emocional que lo lleva a comprender el legado más valioso que su padre pudo dejarle.
-</p>
+                    Tras la muerte de su padre, Marceronte hereda una serie de objetos aparentemente inconexos: un sombrero, un automóvil antiguo, un reloj y algunas pistas financieras. Inicialmente, Marceronte no esperaba encontrar un legado material y ni siquiera conocía el valor de estos objetos. Sin embargo, a medida que avanza en la interpretación de las pistas, descubre que su verdadero propósito no era acumular riquezas, sino emprender un profundo viaje interno. Lo que comienza como una búsqueda confusa y desconcertante, se transforma en una revelación espiritual y emocional que lo lleva a comprender el legado más valioso que su padre pudo dejarle.
+                </p>
                 <p class="text-stone-400 italic mb-8">
                     "El verdadero legado no era lo que podía poseer... sino en quién debía convertirse."
                 </p>
@@ -123,26 +119,26 @@
         </div>
     </section>
 
-       <!-- SECCIÓN EL AUTOR -->
-<section id="autor" class="py-24 px-6 bg-estudio">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div class="w-64 h-64 shrink-0">
-            <!-- SUSTITUIR AQUÍ: Pon el link a tu foto profesional -->
-            <img src="foto-autor.png" alt="Raymond Rosa Ávila - Autor del libro" class="w-full h-full object-cover rounded-full shadow-2xl border-4" style="border-color: #d4af37;">
-        </div>
-        <div class="text-center md:text-left">
-            <h2 class="serif text-4xl mb-4 text-gold">Raymond Rosa Ávila</h2>
-            <p class="text-stone-300 text-lg leading-relaxed max-w-2xl">
-                Escritor Puertorriqueño apasionado por las historias que conectan el alma con los valores eternos. 
-                <span class="italic text-gold">El Legado del Sombrero</span> es su obra debut, una novela que invita 
-                a reflexionar sobre la herencia más profunda que un padre puede dejar: una vida transformada.
-            </p>
-            <div class="mt-6 flex gap-4 justify-center md:justify-start">
-                <a href="https://www.facebook.com/profile.php?id=61589480074109" class="text-stone-400 hover:text-gold transition">Facebook</a>
+    <!-- SECCIÓN EL AUTOR -->
+    <section id="autor" class="py-24 px-6 bg-estudio">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-64 h-64 shrink-0">
+                <!-- SUSTITUIR AQUÍ: Pon el link a tu foto profesional -->
+                <img src="foto-autor.png" alt="Raymond Rosa Ávila - Autor del libro" class="w-full h-full object-cover rounded-full shadow-2xl border-4" style="border-color: #d4af37;">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="serif text-4xl mb-4 text-gold">Raymond Rosa Ávila</h2>
+                <p class="text-stone-300 text-lg leading-relaxed max-w-2xl">
+                    Escritor Puertorriqueño apasionado por las historias que conectan el alma con los valores eternos. 
+                    <span class="italic text-gold">El Legado del Sombrero</span> es su obra debut, una novela que invita 
+                    a reflexionar sobre la herencia más profunda que un padre puede dejar: una vida transformada.
+                </p>
+                <div class="mt-6 flex gap-4 justify-center md:justify-start">
+                    <a href="https://www.facebook.com/profile.php?id=61589480074109" class="text-stone-400 hover:text-gold transition">Facebook</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- SECCIÓN REFLEXIONES -->
     <section id="reflexiones" class="py-24 px-6 bg-stone-950">
@@ -178,43 +174,43 @@
     </section>
 
     <!-- SECCIÓN PROPÓSITO E INSPIRACIÓN -->
-<section id="inspiracion" class="py-24 px-6 bg-stone-900 text-white">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="serif text-4xl mb-6 text-gold">¿Por qué leer esta historia?</h2>
-        <p class="text-lg text-stone-400 mb-16 max-w-2xl mx-auto">
-            Más que una novela, este libro es una invitación a reflexionar sobre las huellas que dejamos y las que decidimos seguir.
-        </p>
+    <section id="inspiracion" class="py-24 px-6 bg-stone-900 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="serif text-4xl mb-6 text-gold">¿Por qué leer esta historia?</h2>
+            <p class="text-lg text-stone-400 mb-16 max-w-2xl mx-auto">
+                Más que una novela, este libro es una invitación a reflexionar sobre las huellas que dejamos y las que decidimos seguir.
+            </p>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Razón 1: Inspiración -->
-            <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition duration-300">
-                <div class="text-gold text-3xl mb-4">✨</div>
-                <h3 class="text-xl font-bold mb-3">Fuente de Inspiración</h3>
-                <p class="text-stone-400 leading-relaxed">
-                    Una historia que nos recuerda que el valor real de la vida no reside en lo que acumulamos, sino en la calidad de nuestra transformación humana.
-                </p>
-            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Razón 1: Inspiración -->
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition duration-300">
+                    <div class="text-gold text-3xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-3">Fuente de Inspiración</h3>
+                    <p class="text-stone-400 leading-relaxed">
+                        Una historia que nos recuerda que el valor real de la vida no reside en lo que acumulamos, sino en la calidad de nuestra transformación humana.
+                    </p>
+                </div>
 
-            <!-- Razón 2: Búsqueda Diaria -->
-            <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition duration-300">
-                <div class="text-gold text-3xl mb-4">🔍</div>
-                <h3 class="text-xl font-bold mb-3">Una Búsqueda Compartida</h3>
-                <p class="text-stone-400 leading-relaxed">
-                    A través de Marceronte, exploramos esa búsqueda diaria que todos enfrentamos: la de encontrar sentido y propósito en medio de lo desconocido.
-                </p>
-            </div>
+                <!-- Razón 2: Búsqueda Diaria -->
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition duration-300">
+                    <div class="text-gold text-3xl mb-4">🔍</div>
+                    <h3 class="text-xl font-bold mb-3">Una Búsqueda Compartida</h3>
+                    <p class="text-stone-400 leading-relaxed">
+                        A través de Marceronte, exploramos esa búsqueda diaria que todos enfrentamos: la de encontrar sentido y propósito en medio de lo desconocido.
+                    </p>
+                </div>
 
-            <!-- Razón 3: Horizonte de Esperanza -->
-            <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition duration-300">
-                <div class="text-gold text-3xl mb-4">🌅</div>
-                <h3 class="text-xl font-bold mb-3">Un Horizonte de Esperanza</h3>
-                <p class="text-stone-400 leading-relaxed">
-                    Para quienes buscan una luz en el camino, este libro ofrece la certeza de que siempre hay un legado esperando ser descubierto dentro de nosotros mismos.
-                </p>
+                <!-- Razón 3: Horizonte de Esperanza -->
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition duration-300">
+                    <div class="text-gold text-3xl mb-4">🌅</div>
+                    <h3 class="text-xl font-bold mb-3">Un Horizonte de Esperanza</h3>
+                    <p class="text-stone-400 leading-relaxed">
+                        Para quienes buscan una luz en el camino, este libro ofrece la certeza de que siempre hay un legado esperando ser descubierto dentro de nosotros mismos.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- CTA FINAL -->
     <section class="py-20 px-6 bg-stone-900 text-white text-center">
@@ -231,34 +227,34 @@
     </section>
 
     <!-- SECCIÓN SUSCRIPCIÓN / CAPTURA DE EMAILS -->
-<section id="newsletter" class="py-20 px-6 bg-deep-earth text-white text-center">
-    <div class="max-w-3xl mx-auto">
-        <h2 class="serif text-3xl mb-4 text-gold">Recibe más reflexiones</h2>
-        <p class="text-stone-300 mb-8">
-            Únase a mi comunidad para recibir contenido exclusivo, pensamientos sobre el legado y noticias de mis próximas obras.
-        </p>
+    <section id="newsletter" class="py-20 px-6 bg-deep-earth text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="serif text-3xl mb-4 text-gold">Recibe más reflexiones</h2>
+            <p class="text-stone-300 mb-8">
+                Únase a mi comunidad para recibir contenido exclusivo, pensamientos sobre el legado y noticias de mis próximas obras.
+            </p>
 
-        <!-- EL FORMULARIO -->
-        <form action="https://formspree.io/f/mredqdzp" method="POST" class="flex flex-col md:flex-row gap-4 justify-center">
-            <input 
-                type="email" 
-                name="email" 
-                placeholder="Tu correo electrónico" 
-                required 
-                class="px-6 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-stone-500 focus:outline-none focus:border-gold transition w-full md:w-80"
-            >
-            <button 
-                type="submit" 
-                class="bg-gold-gradient px-8 py-3 rounded-full text-stone-900 font-bold uppercase tracking-widest hover:scale-105 transition-transform"
-            >
-                Suscribirme
-            </button>
-        </form>
-        <p class="text-xs text-stone-500 mt-4 italic">
-            Respeto su privacidad. No enviaré spam, solo luz y reflexiones.
-        </p>
-    </div>
-</section>
+            <!-- EL FORMULARIO -->
+            <form action="https://formspree.io/f/mredqdzp" method="POST" class="flex flex-col md:flex-row gap-4 justify-center">
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Tu correo electrónico" 
+                    required 
+                    class="px-6 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-stone-500 focus:outline-none focus:border-gold transition w-full md:w-80"
+                >
+                <button 
+                    type="submit" 
+                    class="bg-gold-gradient px-8 py-3 rounded-full text-stone-900 font-bold uppercase tracking-widest hover:scale-105 transition-transform"
+                >
+                    Suscribirme
+                </button>
+            </form>
+            <p class="text-xs text-stone-500 mt-4 italic">
+                Respeto su privacidad. No enviaré spam, solo luz y reflexiones.
+            </p>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="bg-black text-stone-400 py-10 text-center text-sm">
@@ -266,9 +262,9 @@
         <p class="italic">"El verdadero legado no se encuentra… se comprende."</p>
         <div class="flex justify-center gap-6 mt-4">
             <a href="privacidad.html" class="hover:text-gold transition">Política de privacidad</a>
-           <a href="contacto.html" class="hover:text-gold transition">Contacto</a>
+            <a href="contacto.html" class="hover:text-gold transition">Contacto</a>
         </div>
     </footer>
 
 </body>
-</html>      
+</html>
