@@ -212,17 +212,35 @@
         </div>
     </section>
 
-    <!-- NEWSLETTER - OPCIONAL -->
-    <section class="py-16 px-6 bg-black/50">
-        <div class="max-w-2xl mx-auto text-center">
-            <h3 class="text-2xl mb-4 text-gold serif">Recibe más reflexiones</h3>
-            <p class="text-stone-400 mb-6">Suscríbete para recibir contenido exclusivo del autor.</p>
-            <form class="flex flex-col sm:flex-row gap-4 justify-center">
-                <input type="email" placeholder="Tu correo electrónico" class="px-6 py-3 rounded-full bg-stone-800 border border-stone-700 text-white focus:outline-none focus:border-gold">
-                <button type="submit" class="bg-gold-gradient text-stone-900 px-6 py-3 rounded-full font-bold hover:scale-105 transition">Suscribirme</button>
-            </form>
-        </div>
-    </section>
+    <!-- SECCIÓN SUSCRIPCIÓN / CAPTURA DE EMAILS -->
+<section id="newsletter" class="py-20 px-6 bg-deep-earth text-white text-center">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="serif text-3xl mb-4 text-gold">Recibe más reflexiones</h2>
+        <p class="text-stone-300 mb-8">
+            Únase a mi comunidad para recibir contenido exclusivo, pensamientos sobre el legado y noticias de mis próximas obras.
+        </p>
+
+        <!-- EL FORMULARIO -->
+        <form action="https://formspree.io/f/mredqdzp" method="POST" class="flex flex-col md:flex-row gap-4 justify-center">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Tu correo electrónico" 
+                required 
+                class="px-6 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-stone-500 focus:outline-none focus:border-gold transition w-full md:w-80"
+            >
+            <button 
+                type="submit" 
+                class="bg-gold-gradient px-8 py-3 rounded-full text-stone-900 font-bold uppercase tracking-widest hover:scale-105 transition-transform"
+            >
+                Suscribirme
+            </button>
+        </form>
+        <p class="text-xs text-stone-500 mt-4 italic">
+            Respeto su privacidad. No enviaré spam, solo luz y reflexiones.
+        </p>
+    </div>
+</section>
 
     <!-- FOOTER -->
     <footer class="bg-black text-stone-400 py-10 text-center text-sm">
